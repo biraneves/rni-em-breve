@@ -56,3 +56,23 @@
 .icones a:last-child {
     margin-left: 1rem;
 }
+
+@media (max-width: 768px) {
+    .container img {
+        width: 90%;
+        height: auto;
+    }
+
+    .botoes {
+        text-align: center;
+    }
+
+    .botoes h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .botoes p {
+        font-size: 1rem;
+    }
+}
