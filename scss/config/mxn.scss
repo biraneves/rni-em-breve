@@ -1,0 +1,28 @@
+@use 'fn';
+@use 'vars';
+@use 'sass:color';
+
+@mixin light-border() {
+  border-bottom: 1px solid vars.$fgLight;
+}
+
+@mixin section-padding() {
+  padding: 100px 0;
+}
+
+@mixin section-title() {
+  font-size: fn.p2r(36px);
+  margin-bottom: fn.p2r(32px);
+  @include light-border;
+}
+
+@mixin button() {
+  background-color: vars.$bgButton;
+  color: vars.$bgLight;
+  font-size: fn.p2r(18px);
+  padding: fn.p2r(12px);
+  border: none;
+  border-radius: fn.p2r(6px);
+  cursor: pointer;
+  text-decoration: none;
+}
