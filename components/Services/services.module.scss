@@ -1,0 +1,42 @@
+@use "/scss/config/fn";
+@use "/scss/config/mxn";
+@use "/scss/config/vars";
+
+.services {
+  background-color: vars.$bgLight;
+  @include mxn.section-padding;
+
+  &__title {
+    @include mxn.section-title;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &__cta {
+      width: 46%;
+
+      &__title {
+        font-size: fn.p2r(28px);
+        margin-bottom: fn.p2r(16px);
+      }
+
+      &__text {
+        color: vars.$fgMedium;
+      }
+
+      &__button-wrapper {
+        padding-top: 24px;
+      }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: fn.p2r(12px);
+      width: 50%;
+    }
+  }
+}
