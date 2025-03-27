@@ -25,4 +25,9 @@
   border-radius: fn.p2r(6px);
   cursor: pointer;
   text-decoration: none;
+
+  &:hover {
+    background-color: color.adjust(vars.$bgButton, $lightness: 5%);
+    color: vars.$fgBright;
+  }
 }
