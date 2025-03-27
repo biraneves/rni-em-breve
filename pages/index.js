@@ -5,6 +5,7 @@ import siteSections from "../data/siteSections";
 import NavbarItem from "../components/Navbar/NavbarItem";
 import styles from './home.module.scss';
 import Banner from "../components/Banner";
+import AboutUs from "../components/AboutUs";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       </header>
       <main>
         <Banner />
+        <AboutUs />
       </main>
     </>
   );

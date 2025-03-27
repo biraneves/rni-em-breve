@@ -1,0 +1,28 @@
+@use '/scss/config/fn.scss';
+@use '/scss/config/mxn.scss';
+
+.about-us {
+  @include mxn.section-padding;
+
+  &__title {
+    @include mxn.section-title;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      width: 50%;
+
+      ul {
+        margin-bottom: fn.p2r(18px);
+        margin-left: fn.p2r(20px);
+      }
+    }
+
+    &__image {
+      width: 48%;
+    }
+  }
+}
