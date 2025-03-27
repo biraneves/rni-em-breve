@@ -12,7 +12,7 @@ const Home = () => {
       <header className={styles.header}>
         <div className={styles.container}>
           <Link href="/">
-            <img src="/img/rni-logo.png" alt="Residência na Itália" />
+            <img src="/img/rni-logo-branco-120.svg" alt="Residência na Itália" />
           </Link>
           <Navbar>
             {siteSections.map((item, index) => (
