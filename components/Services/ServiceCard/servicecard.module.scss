@@ -1,0 +1,17 @@
+@use "/scss/config/fn";
+@use "/scss/config/vars";
+
+.item {
+  background-color: vars.$bgBright;
+  padding: fn.p2r(16px);
+  border-radius: 6px;
+
+  &__icon {
+    width: fn.p2r(42px);
+  }
+
+  &__title {
+    font-size: fn.p2r(20px);
+    margin: fn.p2r(16px) 0;
+  }
+}

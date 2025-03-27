@@ -6,6 +6,7 @@ import NavbarItem from "../components/Navbar/NavbarItem";
 import styles from './home.module.scss';
 import Banner from "../components/Banner";
 import AboutUs from "../components/AboutUs";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <main>
         <Banner />
         <AboutUs />
+        <Services />
       </main>
     </>
   );
