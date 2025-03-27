@@ -1,0 +1,35 @@
+@use '/scss/config/fn';
+@use '/scss/config/mxn';
+@use '/scss/config/vars';
+@use '/scss/config/reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: vars.$fgDark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: vars.$fontTitle;
+}
+
+p {
+  font-size: fn.p2r(16px);
+  line-height: fn.p2r(24px);
+  margin-bottom: fn.p2r(16px);
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cta-button {
+  text-transform: uppercase;
+  @include mxn.button;
+}
