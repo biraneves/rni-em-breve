@@ -1,0 +1,50 @@
+@use '/scss/config/fn.scss';
+@use '/scss/config/vars.scss';
+
+.banner {
+  background-image: url('/img/branches.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: vars.$fgBright;
+    position: relative;
+    z-index: 1;
+
+    &__title {
+      font-size: fn.p2r(54px);
+      text-shadow: 1px 1px vars.$bgDark;
+    }
+
+    &__hor-ruler {
+      width: 400px;
+      border-bottom: 1px solid vars.$fgBright;
+      margin: fn.p2r(48px) 0;
+    }
+
+    &__subtitle {
+      font-size: fn.p2r(28px);
+      text-shadow: 1px 1px vars.$bgDark;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(vars.$bgBlack, 0.2), rgba(vars.$bgBlack, 0.9));
+  }
+}
