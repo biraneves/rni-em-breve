@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import siteSections from "../data/siteSections";
 import NavbarItem from "../components/Navbar/NavbarItem";
 import styles from './home.module.scss';
+import Banner from "../components/Banner";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         </div>
       </header>
       <main>
+        <Banner />
       </main>
     </>
   );
