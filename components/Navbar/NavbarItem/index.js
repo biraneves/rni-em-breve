@@ -1,8 +1,9 @@
 import Link from "next/link";
+import styles from "./navbaritem.module.scss";
 
 const NavbarItem = ({ title, icon, url }) => (
-  <li>
-    <Link href={url}>
+  <li className={styles.item}>
+    <Link href={url} className={styles.item__link}>
       <span className={`fa-solid fa-${icon}`} />
       <span>{title}</span>
     </Link>

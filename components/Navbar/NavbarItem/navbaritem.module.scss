@@ -1,0 +1,30 @@
+@use '/scss/config/fn';
+@use '/scss/config/vars';
+
+.item {
+  display: inline-block;
+  text-align: center;
+  margin-left: fn.p2r(32px);
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: vars.$fgLight;
+
+    span {
+      display: block;
+    }
+
+    &__icon {
+      margin-bottom: fn.p2r(8px);
+    }
+
+    &:visited {
+      color: vars.$fgLight;
+    }
+
+    &:hover {
+      color: vars.$fgBright;
+    }
+  }
+}
