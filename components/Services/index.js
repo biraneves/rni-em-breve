@@ -1,6 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import services from "../../data/services";
 import ServiceCard from "./ServiceCard";
 import styles from "./services.module.scss";
+import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
   return (
@@ -8,9 +10,10 @@ const Services = () => {
       <div className="container">
         <div className={styles.services__title}>
           <h2 className={styles.services__title__text}>
-            <span
-              className={`${styles.services__title__text__icon} fa-solid fa-list-checked`}
-            ></span>
+            <FontAwesomeIcon
+              icon={faListCheck}
+              className={styles.services__title__text__icon}
+            />
             Nossos serviços
           </h2>
         </div>

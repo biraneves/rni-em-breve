@@ -1,11 +1,17 @@
-@use '/scss/config/fn.scss';
-@use '/scss/config/mxn.scss';
+@use "/scss/config/fn.scss";
+@use "/scss/config/mxn.scss";
 
 .about-us {
   @include mxn.section-padding;
 
   &__title {
     @include mxn.section-title;
+
+    &__text {
+      &__icon {
+        margin-right: 16px;
+      }
+    }
   }
 
   &__content {

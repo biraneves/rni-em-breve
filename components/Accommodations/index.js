@@ -1,6 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import accommodations from "../../data/accommodations";
 import AccommodationCard from "./AccommodationCard";
 import styles from "./accommodations.module.scss";
+import { faPeopleRoof } from "@fortawesome/free-solid-svg-icons";
 
 const Accommodations = () => {
   return (
@@ -8,9 +10,10 @@ const Accommodations = () => {
       <div className="container">
         <div className={styles.accommodations__title}>
           <h2 className={styles.accommodations__title__text}>
-            <span
-              className={`${styles.accommodations__title__text__icon} fa-solid fa-people-roof`}
-            ></span>
+            <FontAwesomeIcon
+              icon={faPeopleRoof}
+              className={styles.accommodations__title__text__icon}
+            />
             Acomodações
           </h2>
         </div>

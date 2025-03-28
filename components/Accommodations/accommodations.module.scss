@@ -8,6 +8,11 @@
   &__title {
     @include mxn.section-title;
     color: vars.$fgBright;
+    &__text {
+      &__icon {
+        margin-right: 16px;
+      }
+    }
   }
 
   &__content {

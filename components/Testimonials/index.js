@@ -1,6 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import testimonials from "../../data/testimonials";
 import TestimonialCard from "./TestimonialCard";
 import styles from "./testimonials.module.scss";
+import { faMessage } from "@fortawesome/free-solid-svg-icons";
 
 const Testimonials = () => {
   return (
@@ -8,9 +10,10 @@ const Testimonials = () => {
       <div className="container">
         <div className={styles.testimonials__title}>
           <h2 className={styles.testimonials__title__text}>
-            <span
-              className={`${styles.testimonials__title__text__icon} fa-solid fa-message`}
-            ></span>
+            <FontAwesomeIcon
+              icon={faMessage}
+              className={styles.testimonials__title__text__icon}
+            />
             Depoimentos
           </h2>
         </div>
