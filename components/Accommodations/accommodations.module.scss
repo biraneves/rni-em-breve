@@ -1,0 +1,18 @@
+@use "/scss/config/mxn";
+@use "/scss/config/vars";
+
+.accommodations {
+  @include mxn.section-padding;
+  background-color: vars.$bgDark;
+
+  &__title {
+    @include mxn.section-title;
+    color: vars.$fgBright;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
