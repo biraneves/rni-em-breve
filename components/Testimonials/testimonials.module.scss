@@ -1,0 +1,28 @@
+@use "/scss/config/fn";
+@use "/scss/config/mxn";
+@use "/scss/config/vars";
+
+.testimonials {
+  @include mxn.section-padding;
+
+  &__title {
+    @include mxn.section-title;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: fn.p2r(32px);
+  }
+
+  &__cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin-top: fn.p2r(24px);
+    }
+  }
+}
