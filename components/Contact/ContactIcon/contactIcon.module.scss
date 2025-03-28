@@ -1,0 +1,17 @@
+@use "/scss/config/fn.scss";
+@use "/scss/config/vars";
+
+.item {
+  &__icon {
+    font-size: fn.p2r(36px);
+
+    a {
+      color: vars.$fgLight;
+      text-decoration: none;
+
+      &:hover {
+        color: vars.$fgBright;
+      }
+    }
+  }
+}
