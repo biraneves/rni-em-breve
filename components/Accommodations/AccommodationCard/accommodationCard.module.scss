@@ -1,0 +1,24 @@
+@use "/scss/config/fn";
+@use "/scss/config/vars";
+
+.house {
+  background-color: vars.$bgLight;
+  width: 48%;
+  border-radius: 16px;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+    margin-bottom: fn.p2r(24px);
+  }
+
+  &__text {
+    padding: 0 fn.p2r(24px);
+    margin-bottom: fn.p2r(24px);
+
+    &__title {
+      font-size: fn.p2r(20px);
+      line-height: fn.p2r(30px);
+    }
+  }
+}
