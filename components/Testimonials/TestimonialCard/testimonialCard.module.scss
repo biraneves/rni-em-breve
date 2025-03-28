@@ -1,0 +1,56 @@
+@use "/scss/config/fn";
+@use "/scss/config/vars";
+
+.testimonial {
+  background-color: vars.$bgLight;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 vars.$bgDark;
+  padding: fn.p2r(32px);
+
+  &__icon {
+    width: 24px;
+  }
+
+  &__text {
+    color: vars.$fgMedium;
+    margin-bottom: fn.p2r(24px);
+  }
+
+  &__author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+      p {
+        margin-bottom: 0;
+      }
+
+      &__name {
+        font-weight: bold;
+      }
+
+      &__origin {
+        color: vars.$fgMedium;
+      }
+    }
+
+    &__avatar {
+      width: 68px;
+      height: 68px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid vars.$fgMedium;
+      border-radius: 50%;
+      background-color: vars.$bgBright;
+
+      &__image {
+        width: 64px;
+        height: 64px;
+        border: 2px solid vars.$bgBright;
+        border-radius: 50%;
+      }
+    }
+  }
+}
