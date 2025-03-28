@@ -1,38 +1,48 @@
+import {
+  faHouse,
+  faPeopleGroup,
+  faListCheck,
+  faLocationDot,
+  faPeopleRoof,
+  faMessage,
+  faEnvelopeOpen,
+} from "@fortawesome/free-solid-svg-icons";
+
 const siteSections = [
   {
     title: "Início",
     url: "#banner",
-    icon: "house",
+    icon: faHouse,
   },
   {
     title: "Quem somos",
     url: "#about-us",
-    icon: "people-group",
+    icon: faPeopleGroup,
   },
   {
     title: "Serviços",
     url: "#services",
-    icon: "list-check",
+    icon: faListCheck,
   },
   {
     title: "Molise",
     url: "#molise",
-    icon: "location-dot",
+    icon: faLocationDot,
   },
   {
     title: "Acomodações",
     url: "#accommodations",
-    icon: "people-roof",
+    icon: faPeopleRoof,
   },
   {
     title: "Depoimentos",
     url: "#testimonials",
-    icon: "message",
+    icon: faMessage,
   },
   {
     title: "Contato",
     url: "#contact",
-    icon: "envelope-open",
+    icon: faEnvelopeOpen,
   },
 ];
 

@@ -2,16 +2,13 @@
 @use "/scss/config/vars";
 
 .item {
-  &__icon {
+  &__link {
+    color: vars.$fgLight;
+    text-decoration: none;
     font-size: fn.p2r(36px);
 
-    a {
-      color: vars.$fgLight;
-      text-decoration: none;
-
-      &:hover {
-        color: vars.$fgBright;
-      }
+    &:hover {
+      color: vars.$fgBright;
     }
   }
 }

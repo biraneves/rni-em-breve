@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import contactOptions from "../../data/contactOptions";
 import ContactIcon from "./ContactIcon";
 import styles from "./contact.module.scss";
+import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -8,9 +11,10 @@ const Contact = () => {
       <div className="container">
         <div className={styles.contact__title}>
           <h2 className={styles.contact__title__text}>
-            <span
-              className={`${styles.contact__title__text__icon} fa-solid fa-envelope-open`}
-            ></span>
+            <FontAwesomeIcon
+              icon={faEnvelopeOpen}
+              className={styles.contact__title__text__icon}
+            />
             Entre em contato
           </h2>
         </div>
@@ -84,9 +88,10 @@ const Contact = () => {
           </form>
           <div className={styles["contact__content__social-media"]}>
             <div className={styles["contact__content__social-media__item"]}>
-              <span
-                className={`${styles["contact__content__social-media__item__icon"]} fa-brands fa-whatsapp`}
-              ></span>
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                className={styles["contact__content__social-media__item__icon"]}
+              />
               <p
                 className={
                   styles["contact__content__social-media__item__number"]

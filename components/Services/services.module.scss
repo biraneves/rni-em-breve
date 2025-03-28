@@ -8,6 +8,12 @@
 
   &__title {
     @include mxn.section-title;
+
+    &__text {
+      &__icon {
+        margin-right: 16px;
+      }
+    }
   }
 
   &__content {
