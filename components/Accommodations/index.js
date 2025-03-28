@@ -4,7 +4,7 @@ import styles from "./accommodations.module.scss";
 
 const Accommodations = () => {
   return (
-    <section id="accommodation" className={styles.accommodations}>
+    <section id="accommodations" className={styles.accommodations}>
       <div className="container">
         <div className={styles.accommodations__title}>
           <h2 className={styles.accommodations__title__text}>
