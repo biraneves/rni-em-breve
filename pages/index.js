@@ -10,6 +10,7 @@ import Services from "../components/Services";
 import Molise from "../components/Molise";
 import Accommodations from "../components/Accommodations";
 import Testimonials from "../components/Testimonials";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -42,6 +43,7 @@ const Home = () => {
         <Molise />
         <Accommodations />
         <Testimonials />
+        <Contact />
       </main>
     </>
   );
