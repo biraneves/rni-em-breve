@@ -1,0 +1,33 @@
+@use "/scss/config/fn";
+@use "/scss/config/mxn";
+@use "/scss/config/vars";
+
+.molise {
+  @include mxn.section-padding;
+  min-height: 800px;
+  background-image: url(/img/termoli.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: vars.$fgBright;
+
+  &__content {
+    background-color: rgba(vars.$bgBlack, 0.8);
+    width: 540px;
+    border-radius: 16px;
+    padding: fn.p2r(48px);
+    text-align: center;
+
+    &__title {
+      @include mxn.section-title;
+      font-size: fn.p2r(28px);
+      border: none;
+    }
+
+    &__icon {
+      margin-top: fn.p2r(16px);
+      margin-bottom: fn.p2r(32px);
+    }
+  }
+}
