@@ -8,6 +8,7 @@ import Banner from "../components/Banner";
 import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import Molise from "../components/Molise";
+import Accommodations from "../components/Accommodations";
 
 const Home = () => {
   return (
@@ -38,6 +39,7 @@ const Home = () => {
         <AboutUs />
         <Services />
         <Molise />
+        <Accommodations />
       </main>
     </>
   );
