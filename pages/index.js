@@ -9,6 +9,7 @@ import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import Molise from "../components/Molise";
 import Accommodations from "../components/Accommodations";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ const Home = () => {
         <Services />
         <Molise />
         <Accommodations />
+        <Testimonials />
       </main>
     </>
   );
