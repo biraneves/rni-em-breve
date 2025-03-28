@@ -1,0 +1,40 @@
+@use "/scss/config/fn";
+@use "/scss/config/vars";
+
+.footer {
+  padding: fn.p2r(24px);
+  background-color: vars.$bgDark;
+  color: vars.$fgBright;
+
+  p {
+    font-size: fn.p2r(12px);
+    margin: 0;
+  }
+
+  &__disclaimer {
+    p {
+      text-align: left;
+    }
+  }
+
+  &__design {
+    p {
+      text-align: right;
+
+      a {
+        color: vars.$fgLight;
+        text-decoration: none;
+
+        &:hover {
+          color: vars.$fgBright;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
