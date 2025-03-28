@@ -11,6 +11,7 @@ import Molise from "../components/Molise";
 import Accommodations from "../components/Accommodations";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -44,6 +45,7 @@ const Home = () => {
         <Accommodations />
         <Testimonials />
         <Contact />
+        <Footer />
       </main>
     </>
   );
