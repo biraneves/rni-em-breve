@@ -1,0 +1,104 @@
+@use "/scss/config/fn";
+@use "/scss/config/mxn";
+@use "/scss/config/vars";
+
+.contact {
+  @include mxn.section-padding;
+  background-image: url("/img/paese.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: vars.$fgBright;
+
+  &__overlay {
+    background-image: linear-gradient(
+      rgba(vars.$bgBlack, 0.5),
+      rgba(vars.$bgBlack, 1)
+    );
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__title {
+    @include mxn.section-title;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__form {
+      width: 50%;
+
+      &__field {
+        display: block;
+        margin-bottom: fn.p2r(32px);
+
+        &__label {
+          display: block;
+          margin-bottom: fn.p2r(8px);
+          font-family: vars.$fontBase;
+        }
+
+        &__input {
+          width: 100%;
+          padding: fn.p2r(12px);
+          font-size: fn.p2r(18px);
+          color: vars.$fgMedium;
+          font-family: vars.$fontBase;
+          border: none;
+          border-radius: 4px;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        height: fn.p2r(96px);
+        resize: none;
+        border-radius: 4px;
+        padding: fn.p2r(12px);
+        font-size: fn.p2r(18px);
+        color: vars.$fgMedium;
+      }
+
+      button {
+        @include mxn.button;
+      }
+    }
+
+    &__social-media {
+      width: 50%;
+      text-align: center;
+
+      &__item {
+        &__icon {
+          display: block;
+          font-size: fn.p2r(42px);
+        }
+
+        &__number {
+          padding-top: fn.p2r(18px);
+          font-size: fn.p2r(20px);
+        }
+      }
+
+      &__list {
+        padding-top: fn.p2r(48px);
+        list-style-type: none;
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
