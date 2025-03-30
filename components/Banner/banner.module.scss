@@ -1,8 +1,8 @@
-@use '/scss/config/fn.scss';
-@use '/scss/config/vars.scss';
+@use "/scss/config/fn.scss";
+@use "/scss/config/vars.scss";
 
 .banner {
-  background-image: url('/img/branches.jpg');
+  background-image: url("/img/branches.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,6 +11,10 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    min-height: 640px;
+  }
 
   &__content {
     display: flex;
@@ -21,20 +25,39 @@
     position: relative;
     z-index: 1;
 
+    @media screen and (max-width: 768px) {
+      padding: 0 fn.p2r(24px);
+    }
+
     &__title {
       font-size: fn.p2r(54px);
       text-shadow: 1px 1px vars.$bgDark;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        font-size: fn.p2r(36px);
+      }
     }
 
     &__hor-ruler {
       width: 400px;
       border-bottom: 1px solid vars.$fgBright;
       margin: fn.p2r(48px) 0;
+
+      @media screen and (max-width: 768px) {
+        width: 300px;
+      }
     }
 
     &__subtitle {
       font-size: fn.p2r(28px);
       text-shadow: 1px 1px vars.$bgDark;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        font-size: fn.p2r(20px);
+        line-height: fn.p2r(32px);
+      }
     }
   }
 
@@ -45,6 +68,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(rgba(vars.$bgBlack, 0.2), rgba(vars.$bgBlack, 0.9));
+    background-image: linear-gradient(
+      rgba(vars.$bgBlack, 0.2),
+      rgba(vars.$bgBlack, 0.9)
+    );
   }
 }

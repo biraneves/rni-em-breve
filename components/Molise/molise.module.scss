@@ -12,12 +12,24 @@
   background-size: cover;
   color: vars.$fgBright;
 
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__content {
     background-color: rgba(vars.$bgBlack, 0.8);
     width: 540px;
     border-radius: 16px;
     padding: fn.p2r(48px);
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      margin: 0 auto;
+      padding: 24px;
+    }
 
     &__title {
       @include mxn.section-title;

@@ -12,29 +12,54 @@ import Accommodations from "../components/Accommodations";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 const Home = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <GeneralHead />
       <header className={styles.header}>
         <div className={styles.container}>
-          <Link href="/">
-            <img
-              src="/img/rni-logo-branco-120.svg"
-              alt="Residência na Itália"
-            />
-          </Link>
-          <Navbar>
-            {siteSections.map((item, index) => (
-              <NavbarItem
-                key={index}
-                title={item.title}
-                icon={item.icon}
-                url={item.url}
+          <div className={styles.header__logo}>
+            <Link href="/">
+              <img
+                src="/img/rni-logo-branco-120.svg"
+                alt="Residência na Itália"
               />
-            ))}
-          </Navbar>
+            </Link>
+            <div
+              className={styles.header__logo__hamburger}
+              onClick={toggleMenu}
+            >
+              <span className={styles.header__logo__hamburger__line}></span>
+              <span className={styles.header__logo__hamburger__line}></span>
+              <span className={styles.header__logo__hamburger__line}></span>
+            </div>
+          </div>
+          <div
+            className={
+              isMenuOpen === true
+                ? styles.header__navbar__open
+                : styles.header__navbar
+            }
+          >
+            <Navbar>
+              {siteSections.map((item, index) => (
+                <NavbarItem
+                  key={index}
+                  title={item.title}
+                  icon={item.icon}
+                  url={item.url}
+                />
+              ))}
+            </Navbar>
+          </div>
         </div>
       </header>
       <main>

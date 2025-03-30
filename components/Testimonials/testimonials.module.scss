@@ -19,6 +19,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-bottom: fn.p2r(32px);
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__cta {
