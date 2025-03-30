@@ -18,8 +18,18 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: fn.p2r(32px);
+    }
+
     &__text {
       width: 50%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
 
       ul {
         margin-bottom: fn.p2r(18px);
@@ -29,6 +39,10 @@
 
     &__image {
       width: 48%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }

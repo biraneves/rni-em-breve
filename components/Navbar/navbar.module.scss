@@ -1,5 +1,11 @@
 .navbar {
   &__links {
     list-style-type: none;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 16px;
+    }
   }
 }
